@@ -151,18 +151,11 @@ body {
   display: flex;
   justify-content: center;
 }
-#left-btn-see-more {
+.btn-see-more {
   height: 70px;
   width: 300px;
   background-color: #000000;
   cursor: pointer;
-}
-#right-btn-see-more {
-  height: 70px;
-  width: 300px;
-  background-color: #000000;
-  cursor: pointer;
-  float:right;
 }
 .see-more {
   height: 17px;
