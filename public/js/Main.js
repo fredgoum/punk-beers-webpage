@@ -18,7 +18,7 @@ function start() {
     // Gets btns see more
     var els = document.querySelectorAll('*[id^="btn-see-more"]');
     for (let i = 0; i < els.length; i++) {
-      const selectedBeerId = parseInt(els[i].id.slice(-1), 10);
+      const selectedBeerId = parseInt(els[i].id.replace('btn-see-more',''));
       els[i].onclick = getBeer(selectedBeerId);
     }
   }).catch((error) => {

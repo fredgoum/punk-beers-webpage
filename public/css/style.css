@@ -1,7 +1,7 @@
 /* App navigation bar and footer */
 nav {
   width: 95%; margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: -110px;
 }
 body {
   background-color: #FFFFFF;
@@ -9,6 +9,10 @@ body {
 .display-flex-space {
   display: flex;
   justify-content: space-between;
+}
+.display-flex-center {
+  display: flex;
+  justify-content: center;
 }
 #B {
   height: 87px;
@@ -36,6 +40,10 @@ body {
 }
 .hyphen {
   height: 1px;
+  background-color: #D8D8D8;
+}
+.hyphen-vertical {
+  width: 1px;
   background-color: #D8D8D8;
 }
 #footer {
@@ -71,9 +79,20 @@ body {
 }
 
 /* Beers List  */
-#beers-list {
-  display: flex;
-  justify-content: center;
+#beers {
+  position: absolute;
+  margin-top: 260px;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  font-size: 20px;
+}
+#background {
+  font-size: 1500px;
+  font-family: Arial, Helvetica, sans-serif;
+  writing-mode: vertical-rl;
+  margin: 0 auto;
+  color:#FFCF00;
 }
 #left-beers {
   margin-right: 70px;
@@ -169,6 +188,10 @@ body {
 }
 
 /* Beers Details */
+#beer-details {
+  margin-top: 140px;
+  display: none;
+}
 #button-x {
   display: none;
 }
@@ -178,26 +201,54 @@ body {
 }
 #beer-detail-img-content {
   height: 1064px;
-  width: 50%;
+  width: 57%;
   text-align: center;
 }
 #beer-detail-img {
   height: 894px;
-  margin-top: 47px;
+  position: absolute;
+  margin-top: 260px;
+  top: 0;
 }
 #beer-detail-infos {
   height: 1064px;
-  width: 50%;
+  width: 43%;
   margin-left: 119px;
   margin-right: 119px;
 }
 #beer-detail-name {
   margin-top: 51px;
+  color: #000000;
+  font-family: "Druk Cond";
+  font-size: 80px;
+  letter-spacing: 0;
+  line-height: 64px;
+  margin-bottom: 14px;
+}
+#beer-detail-tagline {
+  color: #000000;
+  font-family: "Helvetica Neue";
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-bottom: 45px;
 }
 #beer-description {
+  color: #000000;
+  font-family: "Helvetica Neue";
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 22px;
   margin-bottom: 77px;
 }
 #specifications {
+  color: #CCCCCC;
+  font-family: "Helvetica Neue";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 30px;
   margin-bottom: 25px;
 }
 .beer-detail-lane {
@@ -207,6 +258,19 @@ body {
   margin-bottom: 15px;
 }
 #ingredients {
+  color: #CCCCCC;
+  font-family: "Helvetica Neue";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 30px;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+#beer-detail-background {
+  font-size: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  color:#FFCF00;
+  margin-top: 200px;
 }

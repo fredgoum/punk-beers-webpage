@@ -15,7 +15,7 @@ Class Punk {
   // Get the API data of the 60 beers to display
   public function getBeers()
   {
-    curl_setopt($this->curl, CURLOPT_URL, "{$this->url}?page=1&per_page=5");
+    curl_setopt($this->curl, CURLOPT_URL, "{$this->url}?page=2&per_page=60");
     return $this->sendRequest();
   }
 

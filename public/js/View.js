@@ -62,10 +62,15 @@ class View {
     beerDetailsContent = beerDetailsContent + 
     `<div class='display-flex'>
       <div id='beer-detail-img-content'>
-        <img id='beer-detail-img' class=" bg-text" src=${beer.image_url} alt='beer image'>
+        <div id="beer-detail-background">
+          <b>${beer.name}</b>
+        </div>
+        <img id='beer-detail-img' src=${beer.image_url} alt='beer image'>
       </div>
+      <div class='hyphen-vertical'></div>
       <div id='beer-detail-infos'>
-        <div id="beer-detail-name">${beer.name}</div>
+        <div id="beer-detail-name"><b>${beer.name}</b></div>
+        <div id="beer-detail-tagline"><b>${beer.tagline}</b></div>
         <div id="beer-description">${beer.description}</div>
 
         <div id="specifications">SPECIFICATIONS</div>
