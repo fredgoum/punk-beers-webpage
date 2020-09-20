@@ -1,10 +1,16 @@
 /* App navigation bar and footer */
+html, body {
+  max-width: 100%;
+}
 nav {
   width: 95%; margin: 0 auto;
-  margin-bottom: -110px;
+  margin-bottom: -80px;
 }
 body {
   background-color: #FFFFFF;
+}
+.display-flex {
+  display: flex;
 }
 .display-flex-space {
   display: flex;
@@ -15,28 +21,14 @@ body {
   justify-content: center;
 }
 #B {
-  height: 87px;
-  width: 25px;
   color: #000000;
-  font-family: "Druk Cond";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 80px;
-  letter-spacing: 0;
-  line-height: 89px;
-  margin-left: 60px;
-  margin-bottom: 15px;
-  margin-top: 15px;
+  margin-left: 75px;
 }
 #🍺 {
-  height: 66px;
-  width: 50px;
-  color: #000000;
-  font-family: "Apple Color Emoji";
-  font-size: 50px;
-  letter-spacing: 0;
-  line-height: 66px;
+  font-size: 60px;
   margin-right: 57px;
-  margin-bottom: 25px;
-  margin-top: 25px;
 }
 .hyphen {
   height: 1px;
@@ -47,132 +39,127 @@ body {
   background-color: #D8D8D8;
 }
 #footer {
-  height: 120px;
+  height: 180px;
   background-color: #FFFFFF;
   width: 95%; 
   margin: 0 auto;
-  margin-bottom: 363px;
+  margin-bottom: 248px;
+  position: relative;
+  top: -260px;
 }
 #cheers {
-  height: 24px;
-  width: 83px;
   color: #000000;
-  font-family: "Helvetica Neue";
-  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 30px;
   font-weight: bold;
-  letter-spacing: 0;
-  line-height: 25px;
-  margin-bottom: 48px;
-  margin-top: 48px;
-  margin-left: 58px;
+  margin-top: 60px;
+  margin-left: 88px;
 }
 #punk-api-v-2 {
-  height: 23px;
-  width: 121px;
   color: #000000;
-  font-family: "Helvetica Neue";
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: 24px;
-  margin-right: 59px;
-  padding-top: 53px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 32px;
+  padding-top: 70px;
+  margin-right: 80px;
 }
 
 /* Beers List  */
-#beers {
+#beers-contenair {
   position: absolute;
-  margin-top: 260px;
   top: 0;
-  left: 0;
-  z-index: 10;
-  font-size: 20px;
+  margin-top: 260px;
+  width: 100%;
+  text-align: center;
+}
+#beers {
+  display: inline-block;
+  text-align: center;
 }
 #background {
-  font-size: 1500px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1000px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
   writing-mode: vertical-rl;
   margin: 0 auto;
   color:#FFCF00;
 }
 #left-beers {
-  margin-right: 70px;
+  margin-right: 60px;
 }
 #right-beers {
-  margin-left: 70px;
+  margin-left: 60px;
 }
-.display-flex {
-  display: flex;
+#left-beer-info-img {
+  margin-bottom: 300px;
+}
+#right-beer-info-img {
+  margin-bottom: 300px;
+}
+#left-beer-img-container {
+  height: 700px; 
+  width: 180px;
+}
+#left-beer-img {
+  height: 100%;
+  width: 100%;
+}
+#right-beer-img-container {
+  height: 700px;
+  width: 180px;
+}
+#right-beer-img {
+  margin-top: 350px;
+  height: 100%;
+  width: 100%
 }
 #left-beer-info {
   width: 400px;
-  margin-right: 120px;
-  margin-top: 345px;
+  margin-right: 50px;
+  margin-top: 250px;
 }
 #right-beer-info {
   width: 400px;
-  margin-left: 120px;
-  margin-top: 670px;
+  margin-left: 50px;
+  margin-top: 570px;
 }
 #left-beer-name {
   color: #000000;
-  font-family: "Druk Cond";
-  font-size: 80px;
-  letter-spacing: 0;
-  line-height: 64px;
-  margin-bottom: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 35px;
   text-align: right;
 }
 #right-beer-name {
   color: #000000;
-  font-family: "Druk Cond";
-  font-size: 80px;
-  letter-spacing: 0;
-  line-height: 64px;
-  margin-bottom: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 35px;
+  text-align: left;
 }
 #left-beer-tagline {
   color: #000000;
-  font-family: "Helvetica Neue";
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
   line-height: 22px;
-  text-align: right;
+  float: right;
+  margin-bottom: 15px;
 }
 #right-beer-tagline {
-  width: 240px;
   color: #000000;
-  font-family: "Helvetica Neue";
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
   line-height: 22px;
-}
-#left-beer-brewed {
-  margin-bottom: 14px;
-  text-align: right;
-}
-#right-beer-brewed {
-  margin-bottom: 14px;
-}
-#left-beer-img {
-  width: 180px;
-  margin-right: 60px;
-  margin-bottom: 300px;
-  display: flex;
-  justify-content: center;
-}
-#right-beer-img {
-  width: 180px;
-  margin-left: 60px;
-  margin-top: 350px;
-  margin-bottom: 300px;
-  display: flex;
-  justify-content: center;
+  text-align: left;
+  margin-bottom: 15px;
 }
 .btn-see-more {
-  height: 70px;
-  width: 300px;
+  height: 50px;
+  width: 200px;
   background-color: #000000;
   cursor: pointer;
 }
@@ -181,7 +168,7 @@ body {
   width: 74px;
   color: #FFFFFF;
   font-family: "Helvetica Neue";
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 17px;
@@ -189,7 +176,8 @@ body {
 
 /* Beers Details */
 #beer-details {
-  margin-top: 140px;
+  margin-top: 10px;
+  margin-bottom: 400px;
   display: none;
 }
 #button-x {
@@ -200,55 +188,49 @@ body {
   justify-content: flex-end;
 }
 #beer-detail-img-content {
-  height: 1064px;
-  width: 57%;
+  height: 1000px;
+  width: 50%;
   text-align: center;
 }
 #beer-detail-img {
-  height: 894px;
+  height: 100%;
   position: absolute;
-  margin-top: 260px;
+  margin-top: 200px;
   top: 0;
 }
 #beer-detail-infos {
   height: 1064px;
-  width: 43%;
+  width: 50%;
   margin-left: 119px;
   margin-right: 119px;
 }
 #beer-detail-name {
-  margin-top: 51px;
+  margin-top: 70px;
   color: #000000;
-  font-family: "Druk Cond";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 80px;
-  letter-spacing: 0;
   line-height: 64px;
-  margin-bottom: 14px;
+  margin-bottom: 25px;
+  margin-top: 100px;
 }
 #beer-detail-tagline {
   color: #000000;
-  font-family: "Helvetica Neue";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 40px;
-  font-weight: bold;
-  letter-spacing: 0;
   line-height: 30px;
   margin-bottom: 45px;
 }
 #beer-description {
   color: #000000;
-  font-family: "Helvetica Neue";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 25px;
-  letter-spacing: 0;
   line-height: 22px;
   margin-bottom: 77px;
 }
 #specifications {
   color: #CCCCCC;
-  font-family: "Helvetica Neue";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 30px;
   margin-bottom: 25px;
 }
 .beer-detail-lane {
@@ -259,18 +241,26 @@ body {
 }
 #ingredients {
   color: #CCCCCC;
-  font-family: "Helvetica Neue";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 30px;
   margin-top: 25px;
   margin-bottom: 25px;
 }
 #beer-detail-background {
-  font-size: 200px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0 auto;
+  font-size: 100px;
+  line-height: 80px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
   color:#FFCF00;
   margin-top: 200px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 660px) { /* show on small screen */
+  #left-beer-img-container {
+    height: 500px; 
+    width: 120px;
+  }
+  #right-beer-img-container {
+    height: 500px;
+    width: 120px;
+  }
 }

@@ -3,10 +3,12 @@
     <!-- Beers List Background -->
     <div id="beers-background"></div>
     <!-- Beers List -->
-    <div id="beers">
-      <div class="display-flex-center">
-        <div id="left-beers"></div>
-        <div id="right-beers"></div>
+    <div id="beers-contenair">
+      <div id="beers">
+        <div class="display-flex">
+          <div id="left-beers"></div>
+          <div id="right-beers"></div>
+        </div>
       </div>
     </div>
   </div>

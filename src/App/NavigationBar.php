@@ -1,11 +1,11 @@
 <!-- Navigation bar -->
 <nav>
-  <div class="display-flex-space" style="height: 180px;">
+  <div style="height: 110px; display: flex; justify-content: space-between; width: 100%;">
     <!-- B letter -->
-    <div id="B">B</div>
+    <div id="B"><b>B</b></div>
     <!-- Btn close -->
-    <div id="button-x">
-      <button style="height: 120px; cursor: pointer;" onclick=closeBeerDetails()>X</button>
+    <div id="button-x" style="padding-top: 20px;" onclick=closeBeerDetails()>
+      <b style="height: 120px; cursor: pointer; font-size: 50px;">X</b>
     </div>
     <!-- Beer icone -->
     <div id="🍺">🍺</div>
